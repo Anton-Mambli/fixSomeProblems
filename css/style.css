@@ -34,7 +34,6 @@ a {
   margin: 0 auto;
   max-width: 1344px;
   min-width: 280px;
-  width: 100%;
   padding: 0 16px;
 }
 
@@ -58,7 +57,6 @@ a {
   margin: 0 auto;
   max-width: 1344px;
   min-width: 280px;
-  width: 100%;
   padding: 0 16px;
 }
 
@@ -87,6 +85,13 @@ a {
   margin: 0 90px;
 }
 
+@media only screen and (max-width: 1320px) {
+  .header-menu {
+    margin: 0;
+    display: none;
+  }
+}
+
 .header-menu__item {
   margin: 0 40px 0 0;
 }
@@ -107,11 +112,22 @@ a {
   padding: 22px 40px;
 }
 
+@media only screen and (max-width: 575px) {
+  .btn--header {
+    display: none;
+  }
+}
+
 .header-main {
   position: absolute;
   right: 0;
   left: 0;
-  width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  .header-main {
+    padding: 16px 0;
+  }
 }
 
 @media (max-width: 750px) {
@@ -134,6 +150,12 @@ a {
   display: flex;
   justify-content: flex-end;
   padding: 16px 0 12px 0;
+}
+
+@media only screen and (max-width: 750px) {
+  .header-top {
+    display: none;
+  }
 }
 
 .header-top__item {
@@ -200,20 +222,37 @@ a {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 750px) {
+  .header-mobile__center {
+    padding: 17px 0 0 0;
+  }
+}
+
 .header-mobile__bottom {
   margin: 60px 0 0 0;
+}
+
+@media only screen and (max-width: 750px) {
+  .header-mobile__bottom {
+    margin: 32px 0 0 0;
+  }
 }
 
 .header-mobile__wrapper {
   margin: 0 auto;
   max-width: 1344px;
   min-width: 280px;
-  width: 100%;
   padding: 0 16px;
 }
 
 .header-mobile__logo {
   flex: 0 0 33.333%;
+}
+
+@media only screen and (max-width: 750px) {
+  .header-mobile__logo {
+    display: none;
+  }
 }
 
 .header-mobile__info {
@@ -223,12 +262,93 @@ a {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 750px) {
+  .header-mobile__info {
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .header-mobile__burger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+
 .header-mobile__row {
   display: flex;
 }
 
+@media only screen and (max-width: 750px) {
+  .header-mobile__row {
+    flex-direction: column;
+  }
+}
+
 .header-mobile__col {
   flex: 0 0 33.333%;
+}
+
+@media only screen and (max-width: 750px) {
+  .header-mobile__col {
+    flex: 0 0 100%;
+  }
+}
+
+.header-mobile__lang--mobile {
+  display: none;
+  width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  .header-mobile__lang--mobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .header-mobile__lang--mobile .header-top {
+    display: block;
+  }
+}
+
+.header-mobile__lang--mobile .header-top .header-top__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-mobile__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-mobile__item i {
+  position: relative;
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .header-mobile__item i {
+    display: block;
+  }
+}
+
+.header-mobile__item i:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -25%;
+  right: 0;
+  background-image: url("/img/icon-down.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform .3s ease;
 }
 
 .header-mobile__link {
@@ -241,8 +361,21 @@ a {
   display: block;
 }
 
+@media only screen and (max-width: 750px) {
+  .header-mobile__btn {
+    width: 100%;
+  }
+}
+
 .header-mobile__menu-down {
   padding: 12px 0 40px 0;
+}
+
+@media only screen and (max-width: 750px) {
+  .header-mobile__menu-down {
+    flex: 0 0 100%;
+    padding: 12px 0 40px 12px;
+  }
 }
 
 .header-info__title {
@@ -271,6 +404,30 @@ a {
   letter-spacing: 1px;
   color: #00112e;
   padding: 14px 39px;
+}
+
+@media only screen and (max-width: 750px) {
+  .btn--mobile {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .menu-down {
+    position: absolute;
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.3s;
+  }
+  .menu-down.active {
+    position: relative;
+    visibility: visible;
+    height: 100%;
+    opacity: 1;
+  }
 }
 
 .menu-down__link {
