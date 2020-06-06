@@ -1,0 +1,413 @@
+@mixin muller-light
+	font-family: 'Muller'
+	font-weight: 300
+
+@mixin muller-regular
+	font-family: 'Muller'
+	font-weight: normal
+
+// Основные цвета
+@mixin muller-bold
+	font-family: 'Muller'
+	font-weight: bold
+
+@mixin button
+	background-color: #08f3eb
+	border: 3px solid transparent
+	font-size: 20px
+	line-height: 1.6
+	letter-spacing: 2px
+	color: #01203e
+
+	text-transform: uppercase
+	transition: all 0.3s
+	position: relative
+	&:hover
+		background-color: #fff
+		border: 3px solid #08f3eb
+		cursor: pointer
+
+@mixin title
+	text-transform: uppercase
+	@include muller-bold
+	font-size: 60px
+	color: #00112e
+	position: relative
+	z-index: 10
+	span
+		display: block
+		@include muller-light
+	.title__img
+		position: absolute
+		top: 0
+		left: 0
+		transform: translate(-23%, -25%)
+		z-index: -10
+	+max-width(768px)
+		font-size: 36px
+
+@mixin after
+	content: ''
+	position: absolute
+	width: 0
+	height: 0
+	bottom: 0
+	left: 0
+	border-style: solid
+	border-width: 20px 0 0 1200px
+	border-color: transparent transparent transparent #e6e7f1
+	+max-width(1500px)
+		border-width: 20px 0 0 800px
+	+max-width(1200px)
+		border-width: 20px 0 0 600px
+
+	+max-width(768px)
+		display: none
+
+@mixin before
+	content: ''
+	position: absolute
+	width: 0
+	height: 0
+	top: 0
+	right: 0
+	border-style: solid
+	border-width: 20px 0 0 1200px
+	border-color: #e6e7f1 transparent transparent transparent
+	+max-width(1500px)
+		border-width: 20px 0 0 800px
+	+max-width(1200px)
+		border-width: 20px 0 0 600px
+
+	+max-width(768px)
+		display: none
+
+@mixin link
+	text-decoration: none
+	position: relative
+	transition: color 0.3s
+	&:hover
+		cursor: pointer
+		text-decoration: none !important
+
+	&:focus
+		border: none
+		outline: none
+	&:after
+		position: absolute
+		left: 0
+		width: 100%
+		height: 3px
+		background: $secondary-color
+		content: ''
+		opacity: 0
+		transition: opacity 0.3s, transform 0.3s
+		transform: translateY(-10px)
+
+	&:after
+		bottom: 0
+		transform: translateY(10px)
+	&:hover:after
+		opacity: 1
+		transform: translateY(0px)
+
+@mixin max-width($width)
+	@media only screen and (max-width: $width)
+		@content
+
+@mixin min-width($width)
+	@media only screen and (min-width: $width)
+		@content
+
+@mixin max-height($height)
+	@media only screen and (max-height: $height)
+		@content
+
+@mixin min-height($height)
+	@media only screen and (min-height: $height)
+		@content
+
+@mixin padding()
+	padding: 0 16px
+
+@mixin full-wrapper()
+	margin: 0 auto
+	max-width: $max-width
+	min-width: $min-width
+	width: 100%
+	+padding
+
+$max-width: 1344px
+$min-width: 280px
+
+$primary-color: #08f3eb
+$secondary-color: #2bbeb9
+
+// Экраны
+// ======
+$xl-desktop: 1500px
+$desktop: 1320px
+$lg-tablet: 1199px
+$xl-tablet: 1024px
+$tablet: 992px
+$mobile: 750px
+$sm-mobile: 575px
+
+body
+	margin: 0
+	box-sizing: border-box
+a
+	text-decoration: none
+.btn
+	+button
+/*HEADER*/
+.header 
+	position: relative;
+	&__wrapper
+		+full-wrapper
+		 
+
+
+.header-fix 
+	position: fixed
+	left: 0
+	right: 0
+	top: -150%
+	background-image: -webkit-gradient(linear, left top, right top, from(#013a47), to(#004656))
+	background-image: linear-gradient(to right, #013a47, #004656)
+	&.active
+		animation-name: fixHeader
+		animation-duration: 0.5s
+		animation-fill-mode: both
+		animation-timing-function: ease
+		animation-delay: 0.3s
+
+
+	&__wrapper
+		+full-wrapper 
+	&__row
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__logo 
+
+	&__menu
+		.header-menu
+			margin: 0	 
+
+	&__btn 
+
+	&__togglers
+		display: flex
+		align-items: center 
+
+
+.header-logo 
+	&__link 
+
+	&__img 
+
+	&__desktop 
+
+	&__mobile
+		display: none 
+
+
+.header-menu
+	display: flex
+	justify-content: space-between	
+	margin: 0 90px	
+	&__item
+		margin: 0 40px 0 0 
+		&:last-child
+			margin: 0
+
+	&__link
+		text-transform: uppercase
+		font-size: 14px
+		color: #ffffff 
+
+
+
+
+.btn--header
+	font-size: 14px
+	color: #004453
+	padding: 22px 40px
+
+.header-main
+	position: absolute
+	right: 0
+	left: 0 
+	width: 100%
+	&__logo-desktop
+		@media (max-width: 750px)
+			display: none
+			
+	&__logo-mobile
+		display: none !important
+		@media (max-width: 750px)
+			display: block !important
+
+.header-top
+	display: flex
+	justify-content: flex-end 
+	padding: 16px 0 12px 0	
+	&__item 
+		display: flex 
+
+
+.header-lang
+	font-family: Muller
+	font-size: 13px
+	color: #ffffff
+	margin: 0 60px 0 0
+
+.header-login
+	display: flex  
+	&__item
+		font-family: Muller
+		font-size: 13px
+		color: #ffffff;
+
+	&__separator
+		color: #00ece4
+		margin: 0 12px 
+
+
+.header-center
+	display: flex
+	align-items: center
+	justify-content: space-between 
+	&__item
+			
+		&--right
+			display: flex
+			align-items: center	 
+	
+
+	&__search
+		margin: 0 18px 0 0 
+
+	&__search-icon 
+
+	&__menu 
+
+	&__menu-icon
+
+
+
+.header-mobile
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	right: -100%
+	overflow-y: auto
+	z-index: 100
+	background-image: -webkit-gradient(linear, left top, right top, from(#013a47), to(#004656))
+	background-image: linear-gradient(to right, #013a47, #004656)
+	transition: right .3s ease
+	&.active
+		right: 0
+		transition: right .3s ease
+
+	&__top
+		
+
+	&__center
+		display: flex
+		align-items: center
+		justify-content: space-between 
+
+	&__bottom
+		margin: 60px 0 0 0	 
+
+	&__wrapper
+		+full-wrapper
+
+	&__logo
+		flex: 0 0 33.333% 
+
+	&__info
+		flex: 0 0 66.666%
+		display: flex
+		align-items: center
+		justify-content: space-between  
+	&__burger 
+
+	&__menu 
+
+	&__row
+		display: flex 
+
+	&__col
+		flex: 0 0 33.333%
+			 
+
+	&__item 
+
+	&__link
+		font-size: 18px
+		font-weight: bold
+		letter-spacing: 0.5px
+		color: #ffffff
+		text-transform: uppercase
+		margin: 0 0 12px 0
+		display: block
+
+
+
+	&__menu-down
+		padding: 12px 0 40px 0		 
+
+
+
+
+
+
+.header-info 
+	&__title
+		font-size: 12px
+		letter-spacing: 0.5px
+		color: #2bbeb9
+		text-transform: uppercase
+		font-weight: bold
+
+	&__phone
+		font-size: 18px
+		font-weight: bold;
+		letter-spacing: 0.5px
+		color: #ffffff
+		margin: 4px 0
+
+	&__time
+		font-size: 14px
+		color: #ffffff
+
+
+.btn--mobile
+	font-size: 14px
+	letter-spacing: 1px
+	color: #00112e
+	padding: 14px 39px		
+
+.menu-down 
+	&__item 
+
+	&__link
+		font-size: 16px
+		line-height: 1.56
+		color: #ffffff
+		margin: 6px 0
+		display: block
+		&:first-child
+			margin: 0 0 6px 0
+
+/*ANIMATION*/
+@keyframes fixHeader 
+  0% 
+    top: -150%
+  100% 
+    top: 0

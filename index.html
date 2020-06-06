@@ -13,398 +13,354 @@
 
 </head>
 
+
 <body>
-    <header class="header">
-
-        <div class="header__top">
-            <div class="container">
-                <div class="header-lang">
-                    <div class="header__lang"><a href="#">English version</a></div>
-                    <div class="header__login"><a href="#">Вход</a><span class="header__separator">|</span><a
-                            href="#">Регистрация</a></div>
+  <header class="header">
+      <div class="header-fix">
+        <div class="header-fix__wrapper">
+            <div class="header-fix__row">
+              
+                <div class="header-fix__logo">
+                  <div class="header-logo">
+                      <a href="#" class="header-logo__link"><img src="img\logo-alt.png" class="header-logo__img header-logo__desktop" alt=""></a>
+                      <a href="#" class="header-logo__link"><img src="img\logo-mobile.svg" class="header-logo__img header-logo__mobile" alt=""></a>
+                  </div>
+                </div>
+                <div class="header-fix__menu">
+                  <nav class="header-menu">
+                      <div class="header-menu__item"><a href="#" class="header-menu__link">О форуме</a></div>
+                      <div class="header-menu__item"><a href="#" class="header-menu__link">Участникам</a></div>
+                      <div class="header-menu__item"><a href="#" class="header-menu__link">Программа</a></div>
+                      <div class="header-menu__item"><a href="#" class="header-menu__link">Партнёры</a></div>
+                      <div class="header-menu__item"><a href=#" class="header-menu__link">Выставка</a></div>
+                      <div class="header-menu__item"><a href="#" class="header-menu__link">Фотобанк</a></div>
+                      <div class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></div>
+                  </nav>
+                </div>
+                <div class="header-fix__btn">
+                    <a href="#" class="btn btn--header">Участвовать</a>
+                </div>
+                <div class="header-fix__togglers">
+                  <div class="header-center__search"><img src="img\search-icon.png" alt="" class="header-center__search-icon"></div>
+                  <div class="header-center__menu"><img src="img\menu-icon.png" alt="" class="header-center__menu-icon"></div>
                 </div>
             </div>
         </div>
-        <div class="header__middle">
-            <div class="container">
-                <div class="header__logo">
-                    <img class="logo" src="img/logo.svg" alt="">
-                    <img class="logo-alt" src="img/logo-alt.png" alt="">
-                    <img class="logo-mobile" src="img/logo-mobile.svg" alt="">
-
-                </div>
-                <nav class="header__menu menu">
-                    <ul>
-                        <li><a href="#" class="menu__link"> О форуме </a></li>
-                        <li><a href="#" class="menu__link"> Участникам </a></li>
-                        <li><a href="#" class="menu__link"> Программы </a></li>
-                        <li><a href="#" class="menu__link"> Партнеры </a></li>
-                        <li><a href="#" class="menu__link"> Выставка </a></li>
-                        <li><a href="#" class="menu__link"> Фотобанк </a></li>
-                        <li><a href="#" class="menu__link"> Контакты </a></li>
-
-                    </ul>
-                </nav>
-                <button class="header__btn btn header__btn--fixed">Участвовать</button>
-                <div class="header__buttons" data-btn-target>
-                    <a href="#" class="header__search"><i class="fas fa-search"></i></a>
-                    <a href="#" class="header__burger"><i class="fas fa-bars"></i></a>
-                </div>
-            </div>
-
-        </div>
-        <nav class="header__dropdown dropdown-menu">
-
-
-            <div class="dropdown-menu__wrapper">
-                <div class="header__top">
-                    <div class="container">
-                        <div class="header-lang" data-target-lang>
-                            <div class="header__lang"><a href="#">English version</a></div>
-                            <div class="header__login"><a href="#">Вход</a><span class="header__separator">|</span><a
-                                    href="#">Регистрация</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header__middle">
-                    <div class="container">
-                        <div class="header__logo">
-                            <img class="logo" src="img/logo.svg" alt="">
-                            <img class="logo-alt" src="img/logo-alt.png" alt="">
-                            <img class="logo-mobile" src="img/logo-mobile.svg" alt="">
-
-                        </div>
-
-                        <div class="header__hotline">
-                            <p class="hotline__text">Горячая линия:</p>
-                            <a href="tel:+74957770104" class="hotline__tel">+7(495) 777-01-04</a>
-                            <p class="hotline__subtext">c 10:00 до 18:00</p>
-                        </div>
-                        <button class="header__btn btn" data-header-btn>Участвовать</button>
-                        <div data-btn-spot class="header__buttons">
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="dropdown-menu__menu">
-
-                    <div class="container">
-                        <ul class="dropdown-menu__list">
-                            <li data-lang-spot></li>
-                            <li data-header-btn-spot></li>
-
-                            <li><a href="#" class="dropdown-menu__link">о форуме <i
-                                        class="fas fa-chevron-right"></i></a>
-                                <ul class="dropdown-menu__inner menu-inner">
-                                    <li><a href="#" class="menu-inner__link">Организаторы и партнеры</a></li>
-                                    <li><a href="#" class="menu-inner__link">История форума</a></li>
-                                    <li><a href="#" class="menu-inner__link">Мобильное приложение</a></li>
-                                    <li><a href="#" class="menu-inner__link">Спонсорские пакеты</a></li>
-                                    <li><a href="#" class="menu-inner__link">Контакты</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="dropdown-menu__link">участникам <i
-                                        class="fas fa-chevron-right"></i></a>
-                                <ul class="dropdown-menu__inner menu-inner">
-                                    <li><a href="#" class="menu-inner__link">Условия участия</a></li>
-                                    <li><a href="#" class="menu-inner__link">Порядок онлайн-регистрации</a></li>
-                                    <li><a href="#" class="menu-inner__link">Схема площадки</a></li>
-                                    <li><a href="#" class="menu-inner__link">Размещение в гостинницах</a></li>
-                                    <li><a href="#" class="menu-inner__link">Система назначения встреч</a></li>
-                                    <li><a href="#" class="menu-inner__link">Горячая линиия</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="dropdown-menu__link">сми <i class="fas fa-chevron-right"></i></a>
-                                <ul class="dropdown-menu__inner menu-inner">
-                                    <li><a href="#" class="menu-inner__link">Программа пресс-мероприятий</a></li>
-                                    <li><a href="#" class="menu-inner__link">Политика упоминаний</a></li>
-                                    <li><a href="#" class="menu-inner__link">Пресс-пакет</a></li>
-                                    <li><a href="#" class="menu-inner__link">Контактная информация</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="dropdown-menu__link">программа <i
-                                        class="fas fa-chevron-right"></i></a>
-                                <ul class="dropdown-menu__inner menu-inner">
-                                    <li><a href="#" class="menu-inner__link">Программа форума</a></li>
-                                    <li><a href="#" class="menu-inner__link">Спикеры</a></li>
-                                    <li><a href="#" class="menu-inner__link">Схема расположения залов</a></li>
-                                    <li><a href="#" class="menu-inner__link">Предложить мероприятие</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="dropdown-menu__link">выставка <i
-                                        class="fas fa-chevron-right"></i></a>
-                                <ul class="dropdown-menu__inner menu-inner">
-                                    <li><a href="#" class="menu-inner__link">Участники</a></li>
-                                    <li><a href="#" class="menu-inner__link">Зона презентаций</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-menu__link--container"><a href="#"
-                                    class="dropdown-menu__link">новости</a>
-                                <a href="#" class="dropdown-menu__link">партнеры</a>
-                                <a href="#" class="dropdown-menu__link">фотобанк</a>
-                                <a href="#" class="dropdown-menu__link">место проведения</a>
-                                <a href="#" class="dropdown-menu__link">контакты</a></li>
-                        </ul>
-                    </div>
-
-
-
-                </div>
-
-        </nav>
-
-
-
-    </header>
-
-    <div class="promo-and-partners">
-
-
-        <div class="promo-and-partners__slider">
-            <div>
-                <div class="container">
-                    <div class="header-partners__wrapper">
-                        <div class="header-partners">
-                            <div class="header-partners__row">
-                                <div class="header-partners__col">
-                                    <div class="header-partners__item"><img src="img/rvk-logo.png" alt=""></div>
-                                </div>
-                                <div class="header-partners__col">
-                                    <div class="header-partners__item">платформа нти</div>
-                                </div>
-                                <div class="header-partners__col">
-                                    <div class="header-partners__item"><img src="img/header-icon-3.svg" alt=""><span>при
-                                            поддержке
-                                            правительства рф</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="promo__body">
-                            <div class="promo__date"><span>5</span><span>7</span><span>декабря </span><span>2019</span>
-                            </div>
-                            <div class="promo__date promo__date--alt">5-7 декабря 2019</div>
-                            <div class="promo__content">
-                                <div class="promo__text">Форум</div>
-                                <div class="promo__title">Глобальное технологическое лидерство</div>
-                                <div class="promo__desc">
-                                    <p>Главный медиацентр</p>
-                                    <p>г. Сочи, Олимпийский проспект, д.1</p>
-                                </div>
-                                <button class="promo__btn btn">Участвовать</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="container">
-                    <div class="header-partners__wrapper">
-                        <div class="header-partners">
-                            <div class="header-partners__row">
-                                <div class="header-partners__col">
-                                    <div class="header-partners__item"><img src="img/rvk-logo.png" alt=""></div>
-                                </div>
-                                <div class="header-partners__col">
-                                    <div class="header-partners__item">платформа нти</div>
-                                </div>
-                                <div class="header-partners__col">
-                                    <div class="header-partners__item"><img src="img/header-icon-3.svg" alt=""><span>при
-                                            поддержке
-                                            правительства рф</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="promo__body">
-                            <div class="promo__date"><span>5</span><span>7</span><span>декабря </span><span>2019</span>
-                            </div>
-                            <div class="promo__date promo__date--alt">5-7 декабря 2019</div>
-                            <div class="promo__content">
-                                <div class="promo__text">Форум</div>
-                                <div class="promo__title">Глобальное технологическое лидерство</div>
-                                <div class="promo__desc">
-                                    <p>Главный медиацентр</p>
-                                    <p>г. Сочи, Олимпийский проспект, д.1</p>
-                                </div>
-                                <button class="promo__btn btn">Участвовать</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="container">
-                    <div class="header-partners__wrapper">
-                        <div class="header-partners">
-                            <div class="header-partners__row">
-                                <div class="header-partners__col">
-                                    <div class="header-partners__item"><img src="img/rvk-logo.png" alt=""></div>
-                                </div>
-                                <div class="header-partners__col">
-                                    <div class="header-partners__item">платформа нти</div>
-                                </div>
-                                <div class="header-partners__col">
-                                    <div class="header-partners__item"><img src="img/header-icon-3.svg" alt=""><span>при
-                                            поддержке
-                                            правительства рф</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="promo__body">
-                            <div class="promo__date"><span>5</span><span>7</span><span>декабря </span><span>2019</span>
-                            </div>
-                            <div class="promo__date promo__date--alt">5-7 декабря 2019</div>
-                            <div class="promo__content">
-                                <div class="promo__text">Форум</div>
-                                <div class="promo__title">Глобальное технологическое лидерство</div>
-                                <div class="promo__desc">
-                                    <p>Главный медиацентр</p>
-                                    <p>г. Сочи, Олимпийский проспект, д.1</p>
-                                </div>
-                                <button class="promo__btn btn">Участвовать</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="container">
-                    <div class="header-partners__wrapper">
-                        <div class="header-partners">
-                            <div class="header-partners__row">
-                                <div class="header-partners__col">
-                                    <div class="header-partners__item"><img src="img/rvk-logo.png" alt=""></div>
-                                </div>
-                                <div class="header-partners__col">
-                                    <div class="header-partners__item">платформа нти</div>
-                                </div>
-                                <div class="header-partners__col">
-                                    <div class="header-partners__item"><img src="img/header-icon-3.svg" alt=""><span>при
-                                            поддержке
-                                            правительства рф</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="promo__body">
-                            <div class="promo__date"><span>5</span><span>7</span><span>декабря </span><span>2019</span>
-                            </div>
-                            <div class="promo__date promo__date--alt">5-7 декабря 2019</div>
-                            <div class="promo__content">
-                                <div class="promo__text">Форум</div>
-                                <div class="promo__title">Глобальное технологическое лидерство</div>
-                                <div class="promo__desc">
-                                    <p>Главный медиацентр</p>
-                                    <p>г. Сочи, Олимпийский проспект, д.1</p>
-                                </div>
-                                <button class="promo__btn btn">Участвовать</button>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+     <div class="header-main">
+      
+      <div class="header__wrapper">
+        <div class="header-top">
+            <div class="header-top__item">
+                <div class="header-lang">English version</div>
+                <div class="header-login">
+                    <div class="header-login__item">Вход</div>
+                    <div class="header-login__separator">|</div>
+                    <div class="header-login__item">Регистрация</div>
                 </div>
             </div>
         </div>
-
-
-    </div>
-    <main>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident esse delectus corporis necessitatibus ex
-            optio, facere cumque voluptate excepturi maxime ea! Maiores velit doloribus iste cumque a, sit, aperiam
-            sequi omnis earum, architecto dignissimos totam obcaecati. Delectus tempora a tempore sequi fuga reiciendis
-            quos illo nihil? Sed optio modi, quidem minus sit, repellendus incidunt similique earum harum nihil
-            adipisci, voluptas maxime vero vitae perferendis. Vitae atque dolor sapiente, perspiciatis ut ipsum
-            consequuntur? Doloremque consectetur sapiente dolore nisi inventore facilis aut, voluptas reiciendis facere
-            praesentium incidunt nemo! Cum nam, dolore optio illo facere fugit modi maiores! Deserunt illo fugiat nam,
-            dolore accusantium ipsa incidunt obcaecati repudiandae unde nisi possimus asperiores odio eius quis
-            laboriosam commodi atque dolor ipsum amet quaerat doloribus. Ratione iusto numquam explicabo, praesentium,
-            itaque nisi facilis omnis quos vitae fugiat tempora consequatur, in repellendus? Nobis molestiae maiores,
-            impedit, obcaecati expedita error nostrum earum rerum eos atque labore ex aliquid ipsam aut! Consequuntur
-            soluta, molestias nisi labore, nesciunt doloremque facilis magnam nobis harum in ipsa consectetur laborum
-            provident. Ab quod maiores atque doloremque quidem aspernatur ut voluptate labore dicta temporibus cum
-            repudiandae assumenda qui in quam sit consequatur dolorum nam animi enim et ad, debitis sequi. Doloremque
-            tempore provident unde laboriosam earum veniam at incidunt repellendus quos esse magnam laudantium eaque
-            expedita adipisci asperiores animi porro, quaerat debitis repudiandae voluptatem sint iusto. Ex expedita
-            cumque, itaque, aliquid sed quia possimus sapiente voluptatum numquam qui inventore modi ratione. Tempore
-            temporibus ut, quis, modi nemo ullam accusamus dolor doloremque consectetur porro maxime nobis. Optio
-            voluptates nihil libero! Ipsam aperiam corporis odit eum delectus inventore ea error eveniet magni esse,
-            odio ullam pariatur. Reprehenderit alias distinctio eius consequuntur porro omnis quasi quidem ratione quae.
-            Repudiandae laboriosam ullam qui ea voluptatibus minus voluptatem enim corporis in facilis. Officia
-            recusandae iste labore eum nobis illo libero quaerat autem illum, veniam optio cupiditate provident at
-            officiis necessitatibus? Consequuntur veritatis, hic eligendi at illum aliquam enim nostrum modi vitae
-            architecto corrupti excepturi? Pariatur tempora a ea! Autem nostrum qui deleniti quaerat quasi repellendus
-            omnis iure laudantium accusamus sapiente excepturi quibusdam voluptates tempore quo debitis, consequatur
-            quas quisquam nisi ipsa mollitia saepe eligendi. Consectetur id totam illum explicabo ipsa ad natus maxime
-            ex quis optio adipisci, quia ut hic vel repudiandae quidem eaque aliquam alias nesciunt earum sed sint
-            recusandae atque. Quis ab officiis commodi exercitationem reiciendis architecto est, vitae aut magnam
-            numquam laborum, odio sit iure fugiat dolores incidunt enim pariatur aperiam aliquid laboriosam corporis
-            molestias cum. Incidunt qui tempore numquam corporis minima officiis? Saepe minima ullam distinctio dolorum
-            placeat. Quidem, deserunt dolore similique iste iusto, sed facilis mollitia rem vitae officia veniam harum
-            exercitationem incidunt doloribus necessitatibus eius architecto fugiat hic esse ex neque provident suscipit
-            error recusandae! Cum, eligendi molestias? Qui consectetur officia, delectus dolores mollitia illo explicabo
-            magni ipsam omnis consequuntur necessitatibus. Aspernatur adipisci veritatis voluptatum recusandae expedita
-            earum, nam illum, fugiat odit natus amet reprehenderit nobis pariatur odio, magni qui omnis ab optio cum.
-            Quia, delectus dolorum molestiae quisquam aliquam numquam aut accusantium nemo necessitatibus mollitia unde.
-            Vitae libero, earum placeat eaque voluptate quisquam debitis atque, ipsa non molestiae voluptatem! Corrupti
-            error animi maiores ipsam. Similique distinctio molestiae, qui omnis, eos cumque soluta facere optio nulla
-            veritatis ut perspiciatis. Nam inventore quibusdam incidunt facilis alias doloremque suscipit eveniet est
-            rem in accusamus sequi dicta, expedita placeat facere provident nulla nostrum enim obcaecati animi. Fugiat
-            voluptate temporibus tempore recusandae voluptates, mollitia tempora eos ullam exercitationem, nesciunt,
-            laborum numquam possimus libero blanditiis sed rerum quidem ipsum? Magni totam animi ratione corporis
-            dolorum! Est incidunt debitis facere non odit ipsam nam quaerat explicabo. Odio, saepe modi? Corrupti alias
-            autem obcaecati, minima perferendis eum, voluptate inventore ea quas, facilis laborum nobis voluptas.
-            Incidunt esse eius reiciendis doloribus repellat nesciunt necessitatibus dolorem provident quis, consectetur
-            excepturi vero, dignissimos, beatae fugit aperiam neque. Iste facilis libero qui quis quasi temporibus
-            aliquam labore sed a harum exercitationem, suscipit doloremque blanditiis debitis rem? Aliquid, dolores
-            recusandae. Culpa commodi facilis minus fuga exercitationem repellat expedita necessitatibus harum!
-            Doloribus, earum! Assumenda distinctio placeat possimus minus, tempore officiis quis qui maxime repellat
-            ratione similique. Perspiciatis dignissimos quis voluptatem labore magnam placeat, soluta facere accusantium
-            voluptatum temporibus nostrum sapiente? Atque, in nisi! Ab quae provident aperiam harum dolorem corrupti
-            fuga libero incidunt animi? Ad numquam quam est, quo quidem asperiores nisi distinctio illum animi saepe
-            enim dolores facere accusamus atque. Accusamus illo eius aliquam reprehenderit quibusdam ipsum corrupti,
-            vitae ex et exercitationem doloremque error minima. Eveniet vitae temporibus, quibusdam molestias sequi
-            voluptatem. Laudantium voluptatem magni, distinctio debitis perspiciatis praesentium qui, excepturi velit
-            quibusdam pariatur deserunt maxime sequi provident aliquam odio nulla dolores, nesciunt optio tempore
-            dolorum totam rerum iusto. Dolor, aliquid totam eius optio animi iste, ea deserunt fugiat quos minima
-            reprehenderit. Eos saepe fugit voluptatibus autem maiores quis in veniam quibusdam perferendis provident
-            dolores, animi, praesentium illum, atque et quas cupiditate dolor molestiae nobis. Perferendis dicta est
-            dolore earum, officiis eos possimus placeat ducimus natus adipisci, soluta in! Repellat, cupiditate
-            obcaecati. Dolorem quam quidem laudantium necessitatibus omnis blanditiis aspernatur odit, a repellendus
-            ducimus dignissimos facere atque natus numquam ipsam eos consequuntur pariatur tempore harum commodi? Quam
-            labore porro explicabo quis, minima modi deserunt sunt, error commodi suscipit praesentium ullam soluta
-            dolorum corrupti aspernatur eos voluptatibus consequuntur animi autem, amet eius ab quae aliquid molestias.
-            Commodi facilis consequatur deleniti error. Saepe quae laudantium architecto commodi id voluptatem inventore
-            dolore ea harum accusantium. Itaque autem error quasi quisquam eveniet iure, commodi tempora repellendus
-            recusandae sequi placeat repudiandae accusamus laborum nam dicta illum unde ipsum perferendis qui libero
-            impedit reprehenderit? Provident et saepe distinctio beatae, quo, quae molestiae atque esse commodi odit
-            tempora vero consectetur aspernatur magnam alias nemo accusamus ipsum labore quas qui rem? Totam placeat
-            tempora exercitationem saepe ab velit illo deleniti minus aut animi quis aspernatur expedita dignissimos,
-            eum debitis. Commodi alias reprehenderit dolores impedit iusto facilis minus, suscipit assumenda repudiandae
-            dicta ipsam pariatur magni delectus similique expedita adipisci! Autem dignissimos temporibus consequatur
-            facere debitis blanditiis cupiditate magnam. Iste ut a ea perspiciatis?</p>
-    </main>
-
-    <section class="map">
-        <div class="map__main">
-            <script type="text/javascript" charset="utf-8" async
-                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acc788e57de326371f4321779c4670018f7f07df47e64a8916655c41599965cf0&amp;width=100%25&amp;height=633&amp;lang=ru_RU&amp;scroll=true">
-            </script>
-        </div>
-
-        <div class="container">
-            <div class="map__wrapper">
-                <div class="map__body">
-                    <div class="map__title">Место проведения</div>
-                    <div class="map__place">Главный Медиацентр</div>
-                    <div class="map__address">Россия, Сочи, Олимпийский проспект, д. 1</div>
-                    <div class="map__text">Здание Главного Медиацентра находится в Адлерском районе города Сочи и
-                        примыкает непосредственно к Олимпийскому парку. Общая площадь составляет 155 910,2 кв. м.</div>
+        <div class="header-center">
+          <div class="header-center__item header-center__item--left">
+              <div class="header-logo">
+                  <a href="#" class="header-logo__link"><img class="header-main__logo-desktop" src="img\logo.svg" alt=""></a>
+                  <a href="#" class="header-logo__link"><img class="header-main__logo-mobile" src="img\logo-mobile.svg" alt=""></a>
                 </div>
-                <img class="map__img" src="img/map-img.png" alt="">
-            </div>
-
+          </div>
+          <div class="header-center__item header-center__item--center">
+              <nav class="header-menu">
+                  <div class="header-menu__item"><a href="#" class="header-menu__link">О форуме</a></div>
+                  <div class="header-menu__item"><a href="#" class="header-menu__link">Участникам</a></div>
+                  <div class="header-menu__item"><a href="#" class="header-menu__link">Программа</a></div>
+                  <div class="header-menu__item"><a href="#" class="header-menu__link">Партнёры</a></div>
+                  <div class="header-menu__item"><a href=#" class="header-menu__link">Выставка</a></div>
+                  <div class="header-menu__item"><a href="#" class="header-menu__link">Фотобанк</a></div>
+                  <div class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></div>
+              </nav>
+          </div>
+          <div class="header-center__item header-center__item--right">
+              <div class="header-center__search"><img src="img\search-icon.png" alt="" class="header-center__search-icon"></div>
+              <div class="header-center__menu"><img src="img\menu-icon.png" alt="" class="header-center__menu-icon"></div>
+          </div>
         </div>
+      </div>
+       
+     </div>
+     <div class="header-mobile">
+         <div class="header-mobile__wrapper">
+            <div class="header-mobile__top">
+                <div class="header-top">
+                    <div class="header-top__item">
+                        <div class="header-lang">English version</div>
+                        <div class="header-login">
+                            <div class="header-login__item">Вход</div>
+                            <div class="header-login__separator">|</div>
+                            <div class="header-login__item">Регистрация</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile__center">
+                <div class="header-mobile__logo">
+                    <div class="header-logo"><a href="#" class="header-logo__link"><img src="img\logo.svg" alt=""></a></div>
+                </div>
+                <div class="header-mobile__info">
+                    <div class="header-info">
+                        <div class="header-info__title">Горячая линия:</div>
+                        <div class="header-info__phone">+7 (495) 777-01-04</div>
+                        <div class="header-info__time">с 10:00 до 18:00</div>
+                    </div>
+                    <div class="header-mobile__btn">
+                        <a href="#" class="btn btn--mobile">Участвовать</a>
+                    </div>
+                    <div class="header-mobile__burger">
+                        <div class="header-center__menu"><img src="img\menu-icon.png" alt="" class="header-center__menu-icon header-mobile__menu-icon"></div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile__bottom">
+               <nav class="header-mobile__menu">
+                <div class="header-mobile__row">
+                    <div class="header-mobile__col">
+                        <div class="header-mobile__item">
+                            <a href="#" class="header-mobile__link">О форуме</a>
+                            <i></i>
+                            <div class="header-mobile__menu-down menu-down">
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Организаторы и партнеры</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">История форума</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Мобильное приложение</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Спонсорские пакеты</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Контакты</a></div>
+                            </div>
+                            
+                        </div>
+                        <div class="header-mobile__item">
+                            <a href="#" class="header-mobile__link">Программа</a>
+                            <i></i>
+                            <div class="header-mobile__menu-down menu-down">
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Программа форума</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Спикеры</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Схема расположения залов</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Предложить мероприятие</a></div>
+                            </div>
+                            
+                        </div>
+                    </div>
 
-    </section>
+                    <div class="header-mobile__col">
+                        <div class="header-mobile__item">
+                            <a href="#" class="header-mobile__link">Участникам</a>
+                            <i></i>
+                            <div class="header-mobile__menu-down menu-down">
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Условия участия</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Порядок онлайн-регистрации</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Схема площадки</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Размещение в гостиницах</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Система назначения встреч</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Горячая линия</a></div>
+                            </div>
+                            
+                        </div>
+                        <div class="header-mobile__item">
+                            <a href="#" class="header-mobile__link">Выставка</a>
+                            <i></i>
+                            <div class="header-mobile__menu-down menu-down">
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Участники</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Зона презентаций</a></div>
+                            </div>
+                            
+                        </div>
+
+
+
+                    </div>
+                    <div class="header-mobile__col">
+
+                        <div class="header-mobile__item">
+                            <a href="#" class="header-mobile__link">СМИ</a>
+                            <i></i>
+                            <div class="header-mobile__menu-down menu-down">
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Программа пресс-мероприятий</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Политика упоминаний</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Пресс-пакет</a></div>
+                                <div class="menu-down__item"><a href="#" class="menu-down__link">Контактная информация</a></div>
+                            </div>
+                            
+                        </div>
+                        <div class="header-mobile__item">
+                            <a href="#" class="header-mobile__link">Новости</a>
+                        </div>
+
+                        <div class="header-mobile__item">
+                            <a href="#" class="header-mobile__link">Партнёры</a>
+                        </div>
+                        <div class="header-mobile__item">
+                            <a href="#" class="header-mobile__link">Фотобанк</a>
+                        </div>
+                        <div class="header-mobile__item">
+                            <a href="#" class="header-mobile__link">Место проведения</a>
+                        </div>
+                        <div class="header-mobile__item">
+                            <a href="#" class="header-mobile__link">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+               </nav>
+            </div> 
+         </div>
+     </div>
+  </header>
+
+    <main style="padding-top: 150px; background-image:url('img/header-bg.jpg');">Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Ad alias architecto aspernatur at commodi, corporis cumque ducimus ea eius
+        et eveniet facere id illo iusto labore laborum magnam, maiores molestias nihil nisi nulla odio quae, quasi
+        quibusdam ratione reiciendis sapiente sed vitae voluptas voluptate. Aspernatur dolorem eius eligendi esse
+        excepturi, id iure nobis non omnis perspiciatis quos reiciendis reprehenderit sapiente totam veniam vitae
+        voluptas! Consequatur ducimus eligendi inventore molestias numquam placeat vel! Commodi consequatur dignissimos
+        dolor dolorum facere harum officiis qui voluptatibus. Cum dignissimos eaque earum fugit impedit laboriosam
+        mollitia omnis sit? Aspernatur consequatur eaque et harum necessitatibus non quod! Ad amet aperiam beatae
+        deleniti error est eveniet minima minus necessitatibus quis soluta tenetur ullam velit, veniam voluptatem!
+        Adipisci aliquam aperiam doloremque est fugit illo impedit, inventore labore nostrum, possimus provident quam
+        quas quasi quos repudiandae sed totam unde! Consequatur in ipsam possimus provident quos sapiente temporibus!
+        Cum deserunt, esse excepturi hic iusto laborum non odit provident temporibus! Ad aliquam assumenda, blanditiis
+        dolorum earum eveniet facere fugit iure, maiores minima necessitatibus quidem voluptatum? Aliquam architecto
+        asperiores aspernatur assumenda aut beatae deserunt explicabo facilis incidunt, laborum officia perspiciatis
+        quae quibusdam quod sequi tempora, vitae voluptas? Assumenda dignissimos eos harum, laborum magni maxime nam,
+        nemo non nostrum nulla sunt suscipit unde. Autem enim error, facere harum id illo illum inventore ipsam modi
+        natus nemo, neque officia perspiciatis repudiandae sed sunt suscipit tempore vel? Atque, aut commodi cum cumque
+        dolores doloribus eaque earum eum fugit inventore labore magnam maxime nisi officia officiis pariatur quaerat
+        quam repellat repudiandae ut vel vero vitae. Aspernatur autem eaque fugit officiis temporibus. Aspernatur atque
+        blanditiis commodi, dicta doloribus ea enim est explicabo facere facilis illo impedit ipsa ipsum iste natus,
+        optio praesentium quaerat quasi quia quis repudiandae tempore temporibus unde voluptas, voluptatem? Amet, atque
+        doloribus esse est explicabo facilis fuga ipsum nihil optio possimus quisquam recusandae ullam vitae? Aperiam
+        dolore doloribus exercitationem explicabo id in ipsum magni maiores minima nesciunt perspiciatis qui
+        reprehenderit soluta, tempore voluptatem! Adipisci at, atque cum dignissimos dolore dolorem doloribus eveniet
+        fuga itaque iure iusto laborum minima nam nobis nostrum odio provident quasi quidem quod reiciendis rem
+        reprehenderit soluta tempore velit veritatis voluptas voluptate voluptatem? Ab animi cum dicta dolores enim
+        excepturi harum ipsum minus nihil nostrum obcaecati, odit praesentium provident repudiandae sed sit velit
+        voluptas? Accusamus aliquam animi beatae consectetur deleniti deserunt doloremque, doloribus dolorum
+        exercitationem expedita harum ipsa, magni minus numquam perspiciatis quae rem, totam voluptas. Accusantium eos,
+        excepturi molestiae officia perferendis quae quisquam voluptatibus. A cupiditate harum odio qui sint.
+        Accusantium assumenda atque delectus ducimus, error eum expedita ipsa nobis quae tempora, ut, vitae voluptates
+        voluptatum? Aliquid deleniti distinctio dolorem, dolores eaque facilis, iusto nesciunt nihil, rerum tempore
+        temporibus vel velit veniam. Corporis cum dolorem doloremque error, impedit laudantium, magnam necessitatibus
+        nemo odio repellat repudiandae soluta tenetur velit? Accusantium aut corporis cumque dolorem eligendi explicabo
+        fuga fugiat illum, impedit incidunt laborum magnam minus nulla odit, placeat quo repellat unde vel! At autem,
+        consectetur, consequatur distinctio error eum expedita facilis fugit id illum incidunt libero minima minus
+        mollitia natus nihil nostrum numquam obcaecati omnis optio perspiciatis quis quod repellat, saepe sint suscipit
+        tempora voluptate? Accusantium fuga perferendis quam similique veritatis! At, corporis eaque et odio quaerat
+        quas similique ullam voluptatem! Accusantium amet aut autem non recusandae! Amet assumenda molestiae nobis porro
+        provident quae voluptas. Asperiores aspernatur deleniti dolores est illum vel. Adipisci assumenda, deserunt
+        dolorem eius est, expedita magni non nulla quaerat quasi quidem quo rerum tempore ullam unde! A ad aliquid
+        aperiam commodi deleniti, deserunt dolores, ducimus earum esse eum ex illo illum ipsa ipsam magni nesciunt nulla
+        obcaecati officia officiis perferendis placeat porro qui quidem sit, velit voluptas voluptatum. Aperiam atque
+        corporis deleniti deserunt dolores dolorum ducimus expedita harum illo illum in magni nam non odio omnis
+        perferendis quasi, ratione rem repellendus sed suscipit temporibus vitae voluptatum. Consequatur corporis,
+        deserunt doloremque ex nihil quam quis quisquam sed tempore ut. Consectetur, dolore eos id illo molestiae nemo
+        nisi soluta voluptatibus. Animi consequuntur culpa distinctio doloribus fuga maiores, porro qui tempore vitae.
+        Aliquam deleniti doloremque enim eos maiores nobis quaerat tenetur totam. Adipisci amet asperiores culpa debitis
+        delectus deleniti deserunt dignissimos distinctio dolorem eaque error illo impedit ipsam laudantium magnam modi
+        molestiae officia omnis porro quo, recusandae sunt, tempora tempore tenetur, ut vel vitae. Aliquid architecto
+        consequuntur cum delectus dolor dolore dolores eveniet impedit, modi molestiae nemo nobis odio quasi quod totam?
+        Ad alias aliquid architecto consectetur, cupiditate dicta dolorem impedit in incidunt ipsam, ipsum labore
+        necessitatibus non quaerat quam reiciendis veniam? Autem deserunt eum ex expedita facere id, iure laudantium
+        molestiae officiis quas saepe unde? Dignissimos eum explicabo ipsum porro quam quasi sunt voluptatum. Ad
+        adipisci amet assumenda atque consectetur consequatur cum delectus distinctio doloremque dolores eligendi enim
+        esse hic id illo, laboriosam magni minus nam necessitatibus nihil nisi nulla possimus praesentium quae quidem
+        sapiente sequi ullam vel veritatis voluptatum. Ab alias, aliquam blanditiis consequuntur deserunt, dolorem
+        doloremque ea earum et explicabo impedit in ipsa laudantium magnam maiores maxime nobis non numquam officiis
+        quaerat quod rerum sint sit suscipit totam unde voluptate voluptatem. Commodi consectetur delectus inventore
+        minima omnis quis rem voluptatem! Ab ad aliquam amet atque ducimus eligendi excepturi facere fuga hic id
+        nesciunt porro quos, ratione reprehenderit, sapiente temporibus velit! Alias, consectetur corporis cum ducimus
+        eum eveniet excepturi modi quaerat, quis recusandae, repellendus sit ut voluptatem? Aspernatur blanditiis et
+        ipsum mollitia possimus unde! Ad aliquid at aut consequuntur delectus dolore error eveniet explicabo harum illum
+        labore modi omnis quaerat repellendus rerum sed sunt tempore, voluptate voluptatibus voluptatum. Natus nemo
+        optio voluptates. Deserunt earum iste officiis omnis similique. Autem, doloremque, est eveniet harum nostrum
+        officia officiis omnis placeat quisquam quo recusandae reprehenderit. Aliquam animi aperiam cum cumque
+        dignissimos eligendi explicabo, facere illum impedit in laudantium mollitia natus necessitatibus officia,
+        provident quibusdam reprehenderit, rerum sapiente sunt vero. Ab alias animi assumenda consectetur corporis
+        cumque dicta eaque excepturi fuga iste magnam maxime optio perferendis sunt, voluptatibus. Ipsum, nam
+        voluptatibus. Accusantium dolores, doloribus, error explicabo laudantium nam perferendis placeat quasi quo quod
+        suscipit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eos exercitationem qui quidem. Accusamus
+        doloribus eaque est et excepturi fuga iusto magni maiores minus neque numquam odio, praesentium provident quia
+        similique. Consequatur eaque, facilis fugit nemo pariatur quod rem repellendus? Accusamus adipisci alias amet
+        at, consectetur cupiditate debitis ducimus eos est fugiat illum inventore ipsam labore magnam maxime minima
+        molestias non perferendis perspiciatis placeat, quae quas qui quis quisquam quod reiciendis sapiente soluta,
+        tempore vel voluptas. Accusamus amet animi consectetur eius et eum eveniet fugiat hic illum ipsa iusto
+        laudantium, nihil nobis numquam odit, officia, perferendis quae sed sunt tenetur vel veritatis vero
+        voluptatibus. Aspernatur dicta doloribus excepturi harum ipsam laborum officia quidem tempora totam vero. Atque
+        consectetur consequuntur facere facilis fuga illo itaque nulla ut? A ab animi atque consequuntur deserunt,
+        dignissimos dolorem error facilis fugiat illum impedit in iste itaque labore laborum maiores molestiae nisi
+        nostrum placeat quasi ratione sed sint velit, veritatis voluptatum? A atque blanditiis consectetur consequatur
+        consequuntur corporis cumque delectus dolor eaque eos exercitationem fugit harum in inventore iure laboriosam
+        magni, molestiae nam obcaecati odio optio quasi quidem rem repellendus, repudiandae sit suscipit voluptate?
+        Accusantium ad corporis deserunt et fuga in ipsam maiores necessitatibus nobis numquam, suscipit totam velit
+        voluptatibus. Dolor, dolore illo illum minima odit sed voluptas voluptates. A accusamus amet cupiditate earum
+        enim eum incidunt iure laborum laudantium natus necessitatibus nihil nobis nostrum odit pariatur perspiciatis
+        quas quisquam quod ratione repudiandae sed tenetur, voluptate. Asperiores cum distinctio facilis laboriosam
+        minima mollitia quia repellendus saepe temporibus vero. Alias animi at consequatur, culpa distinctio dolore
+        dolorum earum error eum eveniet excepturi expedita facilis in incidunt inventore, nam natus nisi quia quos
+        recusandae repellendus sint sunt suscipit totam veniam, veritatis vitae voluptatem. Accusamus, adipisci alias
+        aliquam animi aspernatur, consequatur culpa cupiditate, dignissimos distinctio eligendi error ex incidunt
+        laborum minima numquam omnis quia quibusdam reprehenderit repudiandae tempore temporibus vel veniam. A
+        accusantium architecto assumenda aut deleniti dolorem dolorum ducimus esse, eum facilis fugit harum hic iure
+        labore laborum laudantium magni minima molestiae molestias nihil nobis non obcaecati placeat porro possimus
+        quasi quis quisquam quod ratione, sequi soluta sunt temporibus unde voluptas voluptate, voluptatibus voluptatum?
+        Accusamus at autem, blanditiis consectetur cupiditate delectus doloremque exercitationem facilis illum, in
+        magnam nemo nostrum, numquam placeat quibusdam reiciendis rem? Autem corporis dicta doloribus error ex illo
+        ipsum maxime minima numquam, obcaecati odio, omnis perspiciatis possimus quae sunt suscipit unde veritatis
+        voluptatum. Adipisci consequuntur dolore earum et, facere fugit ipsam ipsum maxime modi nemo, numquam odit omnis
+        quasi, repellendus sequi sint sit tempore voluptatem! Aspernatur fugiat iure labore, minus nemo quibusdam
+        repellendus sint. Alias amet autem consequatur consequuntur culpa cupiditate earum esse id ipsam iure iusto
+        magni nemo nobis non possimus quis saepe sapiente, similique sint sunt suscipit temporibus ullam voluptate!
+        Accusamus accusantium asperiores corporis, debitis delectus, deserunt dignissimos dolorem eaque excepturi
+        laborum minima, molestiae mollitia praesentium quas quibusdam saepe sit. A accusamus aut consequuntur deserunt,
+        dolorem eos eveniet excepturi exercitationem explicabo, fugiat iure nemo nesciunt nihil nobis pariatur placeat
+        quo rem, repellat sequi similique ullam unde vero voluptas. Aspernatur autem necessitatibus perspiciatis, quas
+        repellendus veniam? Aliquid atque cumque deleniti dolorem earum enim eos, fugit impedit ipsam minima provident
+        qui quo repudiandae vel voluptates. Aliquid beatae, distinctio, facere impedit inventore iusto libero nam natus
+        perferendis repellendus sint voluptas! Atque beatae blanditiis cumque cupiditate dolor facilis hic laborum
+        necessitatibus nostrum nulla perferendis, quam qui quis quos repellat saepe voluptates. Corporis ut vel veniam.
+        Animi atque, deserunt distinctio eaque eligendi eveniet ex, explicabo fugit illo impedit iste labore mollitia
+        numquam optio quam quas ratione reprehenderit repudiandae veniam voluptatibus! A ab adipisci aperiam asperiores
+        dignissimos, doloremque doloribus eligendi et eum illo in incidunt minus mollitia officiis porro possimus
+        provident quam quasi qui, quo sed tenetur vel voluptate. Aut ducimus error ipsam ipsum iure modi officiis
+        perferendis quos saepe unde? Ab blanditiis corporis culpa eaque, iure labore laboriosam libero natus nemo
+        quisquam reiciendis rem soluta ullam! Alias aspernatur consequatur consequuntur deleniti enim impedit labore
+        tempora tempore ut voluptas! Ab hic id, itaque nisi numquam odit quae quos sequi vitae voluptate. Adipisci
+        aliquam cum dolor esse in, iste neque non officiis sapiente voluptatem! Asperiores, aspernatur consequatur,
+        dignissimos eligendi facere fugit id incidunt libero molestiae, obcaecati officiis quia quos repellendus
+        sapiente tempore velit veritatis. Commodi corporis cumque delectus, ducimus eius error illo inventore ipsa ipsam
+        iusto labore laboriosam maxime molestias, necessitatibus obcaecati odio porro quia quis sed temporibus tenetur
+        veritatis voluptas voluptatibus. Amet, animi aperiam consequatur dolorum esse impedit natus quae quo rem
+        voluptatibus. Accusamus asperiores, dolorum enim eos exercitationem facilis harum hic illum, laudantium non
+        nostrum optio perferendis placeat quae, quasi quibusdam quidem quisquam repellat repudiandae rerum temporibus
+        ullam ut! Aut earum exercitationem, maxime molestiae nesciunt omnis quasi rem ut! Animi asperiores beatae
+        consequuntur culpa cum eum expedita impedit in iste iure magnam mollitia natus necessitatibus neque optio
+        placeat possimus quis quod reiciendis sint sunt, unde vel vitae voluptate voluptatibus. Corporis eum laborum
+        sapiente! Ad adipisci commodi consectetur culpa deserunt dignissimos dolore, dolorum eaque exercitationem, hic
+        magnam mollitia nisi optio rem sapiente suscipit voluptas! A ab aliquid eaque eius eligendi esse eum ex, hic
+        impedit labore minima nisi odio odit omnis rerum sequi tempora temporibus ut vero voluptatem! Adipisci aut
+        deserunt dicta facilis, maxime modi provident. Alias animi aspernatur assumenda beatae consequuntur cupiditate
+        deserunt dicta eius enim ipsa, modi molestiae nam nemo nihil, nostrum numquam odio pariatur qui reiciendis,
+        reprehenderit ullam vero vitae. Accusamus adipisci consectetur corporis debitis dolor eius eos in inventore
+        ipsam, natus porro praesentium quae quaerat quam vel? A alias aliquam animi, aperiam cupiditate dolor ducimus
+        est explicabo fugit illo itaque modi nemo officia optio porro quidem quod rerum saepe sapiente tempora, tenetur
+        totam veritatis voluptas! Ad amet at autem dicta dolore eius eligendi illum impedit ipsa iusto libero magni
+        minus molestias nam neque nulla officia optio perspiciatis praesentium quia quos reiciendis repellat soluta
+        tenetur, totam ullam voluptatem! Ab adipisci, alias aliquid aperiam, assumenda blanditiis commodi consectetur
+        cum dolor dolores expedita facilis impedit labore obcaecati officiis optio pariatur quibusdam quod sunt tempora
+        vitae voluptate voluptatibus.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci aliquid aspernatur at aut
+        consectetur consequuntur deleniti dolores ducimus, est ex exercitationem facere hic id impedit incidunt minima
+        nesciunt, nostrum obcaecati omnis porro sed sit sunt veniam. Accusantium, assumenda aut beatae delectus
+        distinctio, dolorem eos excepturi illo inventore iure laudantium libero maiores nam natus necessitatibus nemo
+        nesciunt nisi nobis nostrum quam quos reiciendis repellendus sed sint tenetur? Ducimus fugiat fugit maxime quo
+        repellat sint, vel. Animi commodi consequatur distinctio, ea facere maiores nesciunt nisi odio, pariatur quis
+        quisquam quo ratione sed sint tenetur, vel voluptas! Doloribus placeat praesentium quisquam.</main>
+
 
 
 
