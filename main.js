@@ -29,3 +29,14 @@ target.classList.toggle('active')
 document.addEventListener('scroll', fixMenu)
 menuBtn.forEach(item => item.addEventListener('click', openMenu))
 menuDownIcon.forEach(item => item.addEventListener('click', openMenuDown))
+
+//PROMO
+$(document).ready(function () {
+
+    $('.promo-and-partners__slider').slick({
+        dots: true,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-prev.png" alt=""></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-next.png" alt=""></button>',
+    });
+});
